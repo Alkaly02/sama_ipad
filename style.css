@@ -67,10 +67,12 @@ img {
 .card--title {
 	font-size: 1.7rem;
 	margin-bottom: 1rem;
+	color: white;
 }
 
 .card--text {
 	font-size: 1.3rem;
+	line-height: 18px;
 }
 
 .screen-md-hidden {
@@ -193,8 +195,16 @@ header {
 		grid-template-columns: repeat(2, 1fr);
 	}
 
+	.card {
+		padding-right: 1rem;
+	}
+
 	.card--img {
 		width: 30%;
+	}
+
+	.card--title {
+		font-size: 1.5rem;
 	}
 
 	.top {
@@ -210,4 +220,72 @@ header {
 		margin-top: 0.5rem;
 		margin-bottom: 1rem;
 	}
+}
+
+.ipad--middle {
+	display: block;
+	width: 50%;
+	margin: auto;
+}
+
+
+/* A propos */
+#apropos, .ipad {
+	background-color: #0C0C0C;
+}
+
+.apropos__container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 2.5rem;
+}
+
+.apropos__container--left, .apropos--img {
+	width: 100%;
+}
+
+.apropos__container--right p {
+	color: white;
+	font-size: 1.3rem;
+	line-height: 3rem;
+}
+
+.a-btn {
+	border: none;
+	font-weight: bold;
+	font-size: 1.5rem;
+	padding: 1rem 4rem;
+	margin-top: 1rem;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+@media (max-width: 572px) {
+	.ipad--middle {
+		width: 90%;
+	}
+
+	.apropos__container {
+		grid-template-columns: 1fr;
+		/*grid-gap: 2.5rem;*/
+	}
+
+	.apropos__container--right p {
+		font-size: 1.5rem;
+	}
+
+}
+
+/* Categories */
+#categories {
+	background-color: #0C0C0C;
+}
+
+#categories h2{
+	text-align: center;
+}
+
+#categories img{
+	margin-bottom: 1rem;
+	width: 100%;
 }
