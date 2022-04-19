@@ -244,7 +244,7 @@ header {
 	width: 100%;
 }
 
-.apropos__container--right p {
+.apropos__container--right p, #contact p {
 	color: white;
 	font-size: 1.3rem;
 	line-height: 3rem;
@@ -270,22 +270,105 @@ header {
 		/*grid-gap: 2.5rem;*/
 	}
 
-	.apropos__container--right p {
+	.apropos__container--right p, #contact p {
 		font-size: 1.5rem;
 	}
 
 }
 
 /* Categories */
-#categories {
+#categories, #contact {
 	background-color: #0C0C0C;
 }
 
-#categories h2{
+#categories h2, #contact h2, #contact p{
 	text-align: center;
+	color: white;
 }
 
 #categories img{
 	margin-bottom: 1rem;
 	width: 100%;
+}
+
+/* Contact */
+#contact h2 {
+	margin-bottom: 0.5rem;
+}
+
+
+form {
+	max-width: 800px;
+	margin: auto;
+}
+
+.form__container {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 3rem;
+}
+
+.form--row {
+	width: 47%;
+	margin-top: 2rem;
+}
+
+label{
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+
+input, textarea {
+	width: 100%;
+	margin-top: 1rem;
+	padding: 2rem 1rem;
+	background-color: #131313;
+	outline: none;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	box-sizing: border-box;
+}
+
+.textarea {
+	margin-top: 3rem;
+}
+
+textarea {
+	resize: none;
+}
+
+.submit {
+	margin-top: 3rem;
+	text-align: center;
+}
+
+.submit button {
+	padding: 2rem 8rem;
+	font-weight: bolder;
+}
+
+@media (max-width: 572px) {
+
+	.form__container {
+		flex-direction: column;
+	}
+	.form--row {
+		width: 100%;
+	}
+
+	input, textarea {
+		width: 100%;
+		margin-top: 0.5rem;
+		padding: 2rem 1rem;
+		background-color: #131313;
+		outline: none;
+		border: none;
+		border-radius: 10px;
+		color: white;
+		box-sizing: border-box;
+	}
+
 }
