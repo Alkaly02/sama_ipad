@@ -382,11 +382,6 @@ textarea {
 	padding: 0 5rem;
 }
 
-/*.slide {
-	max-width: 800px;
-	margin: auto;
-}*/
-
 .slide--item {
 	background-color: #131313;
 	color: white;
@@ -428,7 +423,7 @@ textarea {
 
 .fa-angle-left, .fa-angle-right {
 	font-size: 3rem;
-	padding: 1.5rem 2rem;
+	padding: 1.5rem 2.2rem;
 	border-radius: 100%;
 	background-color: white;
 }
@@ -444,6 +439,6 @@ textarea {
 
 	.fa-angle-left, .fa-angle-right {
 		font-size: 2rem;
-		padding: 0.75rem 1rem;
+		padding: 0.75rem 1.2rem;
 	}
 }
