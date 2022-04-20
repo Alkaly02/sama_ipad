@@ -7,7 +7,12 @@
 	<title>SAMA IPAD</title>
 
 	<link rel="stylesheet" href="style.css">
+
+	<!-- slick CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- AOS -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	
 	<!-- fontawesome -->
 	<script src="https://kit.fontawesome.com/7e3bdb7036.js" crossorigin="anonymous"></script>
@@ -50,13 +55,13 @@
 	<main>
 		<!-- Hero zone -->
 		<div class="hero-zone container">
-			<div class="left-zone">
+			<div class="left-zone" data-aos="fade-left">
 				<h1>L'experience Ipad ultime</h1>
 				<p>
 					Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Eum provident labore dolores? Vel molestiae nisi corrupti delectus, mollitia. Ipsam eligendi vero iure praesentium, provident commodi eum molestias nulla earum velit ipsum  eos, animi mollitia libero.
 				</p>
 			</div>
-			<div class="right-zone">
+			<div class="right-zone" data-aos="fade-right">
 				<img src="./images/tablet-i.png" alt="Tablet" class="img-fluid">
 			</div>
 		</div>
@@ -64,10 +69,10 @@
 		<!-- Services -->
 		<section id="services" class="services">
 			<div class="container">
-				<h2>Services</h2>
+				<h2 data-aos="fade-up">Services</h2>
 				<div class="cards">
 
-					<div class="card">
+					<div class="card" data-aos="fade-up">
 						<img src="./images/livraison.png" alt="Livraison" class="card--img">
 						<div class="card--body">
 							<h3 class="card--title top">Livraison</h3>
@@ -75,7 +80,7 @@
 						</div>
 					</div>
 
-					<div class="card">
+					<div class="card" data-aos="fade-up">
 						<img src="./images/maintenance.png" alt="Maintenance" class="card--img maintenance--img">
 						<div class="card--body">
 							<h3 class="card--title">Maintenance</h3>
@@ -83,7 +88,7 @@
 						</div>
 					</div>
 
-					<div class="card">
+					<div class="card" data-aos="fade-up">
 						<img src="./images/icloud.png" alt="Icloud" class="card--img icloud--img">
 						<div class="card--body">
 							<h3 class="card--title">Icloud</h3>
@@ -91,7 +96,7 @@
 						</div>
 					</div>
 
-					<div class="card">
+					<div class="card" data-aos="fade-up">
 						<img src="./images/apple-logo.png" alt="Apple logo" class="card--img apple-logo--img">
 						<div class="card--body">
 							<h3 class="card--title">Apple Music</h3>
@@ -110,17 +115,17 @@
 		<!-- A propos -->
 		<section id="apropos">
 			<div class="container">
-				<h2>A propos</h2>
+				<h2 data-aos="fade-up">A propos</h2>
 				<div class="apropos__container">
-					<div class="apropos__container--left">
+					<div data-aos="fade-up" class="apropos__container--left">
 						<img src="./images/apropos.png" alt="A prpos de notre travail" class="apropos--img">
 					</div>
 					<div class="apropos__container--right">
-						<h3 class="card--title">NOTRE HISTOIRE</h3>
-						<p>
+						<h3 class="card--title" data-aos="fade-up">NOTRE HISTOIRE</h3>
+						<p data-aos="fade-up">
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, voluptatum possimus voluptatem provident quibusdam nostrum cumque impedit ea, voluptates voluptas saepe omnis fugit, sapiente at maxime, sunt obcaecati sequi cum suscipit totam accusantium amet esse ut maiores! Dolor, iste, quidem expedita autem officia deserunt repellat nostrum minus modi sequi cum!
 						</p>
-						<button type="button" class="a-btn">En savoir plus</button>
+						<button data-aos="fade-up" type="button" class="a-btn">En savoir plus</button>
 					</div>
 				</div>
 			</div>
@@ -129,8 +134,8 @@
 		<!-- Boutique -->
 		<section id="boutique">
 			<div class="slide__container container">
-				<h2>Boutique</h2>
-				<div class="slide__container--item">
+				<h2 data-aos="fade-up">Boutique</h2>
+				<div class="slide__container--item" data-aos="fade-up">
 					<div class="slide">
 						<div class="slide--item">
 							<img src="./images/ipad-air.png" alt="Ipad air">
@@ -151,8 +156,8 @@
 	                        <button type="button" class="a-btn">Ajouter au panier</button>
 						</div>
 					</div>
-					<div class="prev"><i class="fas fa-angle-left"></i></div>
-					<div class="next"><i class="fas fa-angle-right"></i></div>
+					<div data-aos="fade-up" class="prev"><i class="fas fa-angle-left"></i></div>
+					<div data-aos="fade-up" class="next"><i class="fas fa-angle-right"></i></div>
 				</div>
 			</div>
 		</section>
@@ -160,7 +165,7 @@
 		<!-- Categories -->
 		<section id="categories">
 			<div class="container">
-				<h2>Categories</h2>
+				<h2 data-aos="fade-in">Categories</h2>
 				<div class="cards">
 
 					<div class="cat__card">
@@ -226,8 +231,15 @@
 		</section>
 	</main>
 
+	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="app.js"></script>
+
+	<!-- AOS JS -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  	<script>
+    	AOS.init();
+    </script>
 </body>
 </html>
