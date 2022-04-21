@@ -139,7 +139,7 @@ button.toggle-btn {
 	display: none;
 	position: fixed;
 	right: 4%;
-	top: 2%;
+	top: 1.6%;
 	cursor: pointer;
 }
 
@@ -578,7 +578,7 @@ textarea {
 
 }
 
-/* Footer */
+/* ********************* Footer *************** */
 .footer__container {
 	display: grid;
 	grid-template-columns: 2fr repeat(3, 1fr) 2fr;
@@ -618,6 +618,7 @@ textarea {
 }
 
 .footer--item input {
+	width: 100%;
 	background-color: #4E4E4E;
 	padding: 1.5rem 1rem;
 	color: white;
