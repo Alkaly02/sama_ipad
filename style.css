@@ -57,7 +57,7 @@ img {
 .container {
 	max-width: 1300px;
 	margin: auto;
-	padding: 5rem 2rem;
+	padding: 8rem 2rem;
 }
 
 .cards {
@@ -131,17 +131,86 @@ header {
 	cursor: pointer;
 }
 
+/*.toggle-btn {
+	color: white;
+}*/
+button.toggle-btn {
+	all: unset;
+	display: none;
+	position: fixed;
+	right: 4%;
+	top: 2%;
+	cursor: pointer;
+}
+
+.open-menu {
+	font-size: 3.5rem;
+	/*padding: 1rem;*/
+}
+
 @media (max-width: 890px) {
+	header {
+		padding: 2rem 0;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 999;
+		width: 100%;
+	}
+	.navbar {
+		flex-direction: column;
+	}
+
+	.navbar__brand {
+		align-self: flex-start;
+		padding-left: 2rem;
+	}
+
+	.toggle-btn {
+		align-self: flex-end;
+	}
+
+	#menu, .navbar__nav {
+		width: 100%;
+	}
+
+	.navbar__nav {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.nav__list {
+		padding: 2rem 0;
+	}
+
+	.nav__list--link {
+		font-size: 2rem;
+		padding: 0;
+	}
+
+
 	.screen-lg-hidden {
 		display: none;
 	}
+
+	button.toggle-btn, .screen-md-hidden {
+		display: block;
+	}
+
+	.screen-md-hidden {
+		text-align: center;
+		font-size: 2.5rem;
+		font-weight: bold;
+		padding: 2rem 0;
+	}
 }
 
-/* Main */
+/* ******************* Main ************ */
 .hero-zone {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-top: 4rem;
 }
 
 .left-zone {
@@ -411,11 +480,11 @@ header {
 }
 
 .prevTemoin {
-	left: -5%;
+	left: -2%;
 }
 
 .nextTemoin {
-	right: -5%;
+	right: -2%;
 }
 
 .prevTemoin, .nextTemoin {
