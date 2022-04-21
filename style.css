@@ -276,7 +276,7 @@ header {
 
 }
 
-/* Boutique */
+/* ****************** Boutique ********************* */
 .slide__container--item {
 	position: relative;
 	max-width: 800px;
@@ -332,11 +332,23 @@ header {
 
 @media (max-width: 572px){
 	.slide__container--item {
-		padding: 0 2.5rem;
+		padding: 0;
+	}
+
+	.slide--item {
+		padding: 1rem;
 	}
 
 	.slide--item h3 {
 		font-size: 2.5rem;
+	}
+
+	.prev {
+		left: -5%;
+	}
+
+	.next {
+		right: -5%;
 	}
 
 	.fa-angle-left, .fa-angle-right {
@@ -345,7 +357,7 @@ header {
 	}
 }
 
-/* Categories */
+/* ****************** Categories *************** */
 #categories h2, #contact h2, #boutique h2, #contact p{
 	text-align: center;
 	color: white;
@@ -356,11 +368,70 @@ header {
 	width: 100%;
 }
 
-/* Contact */
+/* ******************** Temoignages *********************/
+#temoignages {
+	background-color: white;
+}
+
+#temoignages h2 {
+	color: black;
+	text-align: center;
+}
+
+.slider {
+	position: relative;
+	max-width: 800px;
+	margin: auto;
+	padding: 0 3rem;
+}
+
+.temoin__slide p {
+	font-size: 1.3rem;
+	font-weight: bold;
+	max-width: 500px;
+	margin: auto;
+	text-align: center;
+}
+
+.quotes {
+	width: 5%;
+	/*margin: 0 0.5rem;*/
+}
+
+.temoin--profil {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1rem;
+}
+
+.temoin--profil h5 {
+	font-size: 1.8rem;
+	margin-left: 1rem;
+}
+
+.prevTemoin {
+	left: -5%;
+}
+
+.nextTemoin {
+	right: -5%;
+}
+
+.prevTemoin, .nextTemoin {
+	position: absolute;
+	top: 30%;
+}
+
+.prevTemoin i, .nextTemoin i{
+	background-color: black;
+	color: white;
+}
+
+/* ******************** Contact ********************** */
 #contact h2 {
 	margin-bottom: 0.5rem;
 }
-
 
 form {
 	max-width: 800px;
