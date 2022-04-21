@@ -18,3 +18,10 @@ $(document).ready(()=>{
 	});
 		
 })
+
+const allImages = document.querySelectorAll('img');
+
+allImages.forEach( image => {
+	image.setAttribute('loading', 'lazy');
+	console.log(image)
+})
