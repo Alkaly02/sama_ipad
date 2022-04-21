@@ -53,5 +53,8 @@ $(document).ready(()=>{
 const allImages = document.querySelectorAll('img');
 
 allImages.forEach( image => {
-	image.setAttribute('loading', 'lazy');
+  if(image.classList.contains('no-loading') == false)
+  {
+    image.setAttribute('loading', 'lazy');
+  }
 })
