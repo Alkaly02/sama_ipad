@@ -479,7 +479,7 @@ textarea {
 
 .footer--item input {
 	background-color: #4E4E4E;
-	padding: 1rem 0.5rem;
+	padding: 1.5rem 1rem;
 	color: white;
 }
 
@@ -489,6 +489,8 @@ textarea {
 
 .footer--item button {
 	width: 100%;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
 }
 
 @media (max-width: 850px) {
