@@ -21,9 +21,11 @@ $(document).ready(()=>{
 		$('#menu').stop().slideToggle();
 	})
 
-	$('.nav__list--link').click( () => {
-		$('#menu').slideToggle();
-	})
+    if(screen.width < 890){
+        $('.nav__list--link').click( () => {
+        $('#menu').slideToggle();
+    })
+    }
 
 	// Add smooth scrolling to all links
   $("a").on('click', function(event) {
