@@ -9,7 +9,7 @@ $(document).ready(()=>{
 	});
 
 	$('.temoin__slide').slick({
-  	    dots: false,
+  	  dots: false,
     	infinite: true,
     	speed: 300,
     	cssEase: 'ease-in',
@@ -17,6 +17,7 @@ $(document).ready(()=>{
     	prevArrow: $('.prevTemoin')
 	});
 
+    // toggle menu
 	$('.toggle-btn').click( () => {
 		$('#menu').stop().slideToggle();
 	})
@@ -49,14 +50,16 @@ $(document).ready(()=>{
       });
     } // End if
   });
+
 		
 })
 
 const allImages = document.querySelectorAll('img');
 
 allImages.forEach( image => {
-  if(image.classList.contains('no-loading') == false)
+  if(!image.classList.contains('no-loading'))
   {
     image.setAttribute('loading', 'lazy');
   }
 })
+
